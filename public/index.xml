@@ -2,18 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on Sam Aucoin</title>
-    <link>https://samaucoin.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Welcome on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://samaucoin.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Activities</title>
-      <link>https://samaucoin.org/activities/activities/</link>
+      <title>Turbulent Dynamics of a Submarine Spring Plume</title>
+      <link>http://localhost:1313/presentations/grc2024/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/presentations/grc2024/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/presentations/grc2024/SA_GRC_Poster_final_png.png&#34; alt=&#34;GRC Mixing 2024 Poster&#34;&gt;&#xA;  &lt;figcaption&gt;The poster I presented at the GRC Mixing Conference in 2024.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Coastal Sea-Ice Break-Up Events in Beringia</title>
+      <link>http://localhost:1313/publications/breakupevents/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/breakupevents/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/publications/breakupevents/UtqiagvikWinter95Stability.png&#34; alt=&#34;Break-up events&#34;&gt;&#xA;  &lt;figcaption&gt; Sea‐ice concentration (blue), surface ice temperature (red), and meridional wind&#xA;speed (dark green) from the NOAA/NSIDC Climate Data Record of Passive Microwave Sea Ice Concentration (CDR), European&#xA;Centre for Medium‐Range Weather Forecasts (ECMWF) Reanalysis 5th Generation (ERA5) and Community Earth System Model Large Ensemble Version 1 (CESM1-LE) ensemble member 2 in Utqiagvik. The left‐hand side vertical axis is both wind speed (m/s) and temperature (°C). Winter 1980 is shown for both CESM1‐LE and CDR to represent typical mid‐20th century years. A break‐up event (blue circles) is defined as SIC falling below 95% following stable ice cover for 10 days. The start of the&#xA;freeze season (green lines) is defined as the first day of a series of 10 days with a daily mean greater than 95% SIC, and the start of the melt season (green lines) is defined as the first day of a series of 30 consecutive days with SIC below 95% SIC.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Micro-Urban Heat Islands in the City of Montreal</title>
+      <link>http://localhost:1313/publications/muhis/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/muhis/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/publications/muhis/MUHI_asphalt_concrete_overlap.png&#34; alt=&#34;MUHIs in Montreal&#34;&gt;&#xA;  &lt;figcaption&gt;Micro Urban Heat Islands (MUHI) colocation with asphalt and concrete on August 10th, 2021. MUHIs are&#xA;identified using the top 2% of temperatures. The region around the Montréal Trudeau International Airport is shown in the inset.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Current Tides</title>
+      <link>http://localhost:1313/activities/currenttides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://samaucoin.org/activities/activities/</guid>
-      <description>&lt;p&gt;Here are the activities I do.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/activities/currenttides/</guid>
+      <description>Summary of the activity</description>
+    </item>
+    <item>
+      <title>Kayaking</title>
+      <link>http://localhost:1313/activities/kayaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/activities/kayaking/</guid>
+      <description>Summary of the activity</description>
+    </item>
+    <item>
+      <title>Multi-Source Turbulence</title>
+      <link>http://localhost:1313/projects/multi-source-turbulence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/multi-source-turbulence/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Submarine Groundwater Discharge</title>
+      <link>http://localhost:1313/projects/sgd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sgd/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Tufts Cove</title>
+      <link>http://localhost:1313/projects/tufts-cove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tufts-cove/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Under-Ice Turbulence and Mixing</title>
+      <link>http://localhost:1313/projects/under-ice-turbulence-mixing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/under-ice-turbulence-mixing/</guid>
+      <description>Summary of the project</description>
     </item>
   </channel>
 </rss>

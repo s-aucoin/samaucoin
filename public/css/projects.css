@@ -1,0 +1,101 @@
+/* references.css — use theme-provided CSS variables (body / body.dark-theme) */
+
+/* Layout */
+.cards-container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 22px;
+  box-sizing: border-box;
+}
+
+/* Default card visual:
+   - For normal (light) mode we choose a light card background and table-border color.
+   - For dark mode we pick the sidebar background + sidebar border which your theme defines.
+*/
+.reference-card{
+  max-width: 760px;
+  margin: 18px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  /* Light-mode fallback card background & border (uses theme variables where available) */
+  background: var(--sidebar_h1_color, #fafcff);
+  border: 1px solid var(--sidebar_bg_color, #003366);
+  transition: background .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+
+/* Dark-mode card background and border when your theme sets .dark-theme on body.
+   Also support some common alternate selectors that themes sometimes use. */
+body.dark-theme .reference-card,
+body[data-theme="dark"] .reference-card,
+html.theme-dark .reference-card,
+body.theme-dark .reference-card,
+body[class*="dark"] .reference-card {
+  background: var(--sidebar-bg-color, #001a33);
+  border-color: var(--sidebar-img-border-color, #515151);
+}
+
+/* Card inner padding */
+.card-inner{
+  padding: 26px 30px;
+}
+
+/* Titles: use the theme post-title variable (this is changed by body.dark-theme in your theme) */
+.reference-card .card-title,
+.reference-single .reference-title {
+  color: var(--post-title-color, #303030);
+  font-weight: 700;
+  margin: 0 0 8px;
+  transition: color .12s ease;
+}
+
+/* If the theme is still overriding the heading color with higher specificity,
+   enable the next rule (uncomment) to force the variable-based color. Use sparingly. */
+/*
+.reference-card .card-title,
+.reference-single .reference-title {
+  color: var(--post-title-color, #303030) !important;
+}
+*/
+
+/* Meta & summary: use the list-color variable for muted text (your theme updates this in dark mode) */
+.reference-card .card-summary,
+.reference-single .description-content {
+  color: var(--list-color, #5A5A5A);
+  margin: 12px 0;
+  line-height: 1.6;
+  /* clamp to ~4 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color .12s ease;
+}
+
+.reference-card .card-meta,
+.reference-single .reference-meta,
+.reference-card .card-journal {
+  color: var(--list-color, #5A5A5A);
+  transition: color .12s ease;
+}
+
+/* Links use theme link color */
+.reference-card a,
+.reference-single a {
+  color: var(--link-color, #0059b3);
+}
+
+/* subtle hover lift */
+.reference-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+}
+
+/* Responsive */
+@media (max-width: 720px){
+  .cards-container{ padding: 28px 14px; }
+  .card-inner{ padding: 18px; }
+  .reference-container{ padding: 16px; }
+}

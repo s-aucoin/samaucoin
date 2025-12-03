@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>References on Sam Aucoin</title>
+    <link>http://localhost:1313/references/</link>
+    <description>Recent content in References on Sam Aucoin</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/references/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Publication: An Interesting Study</title>
+      <link>http://localhost:1313/references/example-publication/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/references/example-publication/</guid>
+      <description>A one-sentence summary for the card preview.</description>
+    </item>
+  </channel>
+</rss>

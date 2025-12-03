@@ -2,11 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sam Aucoin</title>
-    <link>https://samaucoin.org/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://samaucoin.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-Source Turbulence</title>
+      <link>http://localhost:1313/projects/multi-source-turbulence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/multi-source-turbulence/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Submarine Groundwater Discharge</title>
+      <link>http://localhost:1313/projects/sgd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sgd/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Tufts Cove</title>
+      <link>http://localhost:1313/projects/tufts-cove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tufts-cove/</guid>
+      <description>Summary of the project</description>
+    </item>
+    <item>
+      <title>Under-Ice Turbulence and Mixing</title>
+      <link>http://localhost:1313/projects/under-ice-turbulence-mixing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/under-ice-turbulence-mixing/</guid>
+      <description>Summary of the project</description>
+    </item>
   </channel>
 </rss>

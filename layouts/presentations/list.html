@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="references-list posts-list">
+  <div class="cards-container">
+    <h1 class="list-title">{{ if .Title }}{{ .Title }}{{ else }}References{{ end }}</h1>
+
+    {{ $pages := .Pages }}
+    {{ if .Paginator }}
+      {{ $pages = .Paginator.Pages }}
+    {{ end }}
+
+    {{ range $pages }}
+      <article class="card-box reference-card">
+        <a class="card-link" href="{{ .RelPermalink }}">
+          <div class="card-inner">
+            <h2 class="card-title">{{ .Title }}</h2>
+
+            <div class="card-authors">{{ partial "author-list.html" . }}</div>
+
+            {{ with .Params.event }}
+              <div class="card-event">{{ . }}</div>
+            {{ end }}
+
+	    {{ with .Params.location }}
+              <div class="card-location">{{ . }}</div>
+            {{ end }}
+
+            {{ with .Params.doi }}
+              <div class="card-doi">
+                <a href="{{ if (hasPrefix . "http") }}{{ . }}{{ else }}https://doi.org/{{ . }}{{ end }}" target="_blank" rel="noopener noreferrer">DOI: {{ . }}</a>
+              </div>
+            {{ end }}
+            </p>
+
+            <div class="card-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            </div>
+          </div>
+        </a>
+      </article>
+    {{ end }}
+
+    {{ if .Paginator }}
+      {{ partial "pagination.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+<!-- Link the CSS for references. This should be loaded after theme CSS -->
+<link rel="stylesheet" href="{{ "/css/presentations.css" | relURL }}">
+{{ end }}

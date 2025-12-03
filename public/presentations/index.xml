@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Sam Aucoin</title>
+    <link>http://localhost:1313/presentations/</link>
+    <description>Recent content in Presentations on Sam Aucoin</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Sun, 09 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turbulent Dynamics of a Submarine Spring Plume</title>
+      <link>http://localhost:1313/presentations/grc2024/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/presentations/grc2024/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/presentations/grc2024/SA_GRC_Poster_final_png.png&#34; alt=&#34;GRC Mixing 2024 Poster&#34;&gt;&#xA;  &lt;figcaption&gt;The poster I presented at the GRC Mixing Conference in 2024.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+  </channel>
+</rss>

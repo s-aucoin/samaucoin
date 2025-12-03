@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="reference-single">
+  <div class="reference-container">
+    <header class="reference-header">
+      <h1 class="reference-title">{{ .Title }}</h1>
+      </div>
+    </header>
+    </div>
+  </div>
+</article>
+
+<!-- Link the CSS for references. This should be loaded after theme CSS -->
+<link rel="stylesheet" href="{{ "/css/activities.css" | relURL }}">
+{{ end }}

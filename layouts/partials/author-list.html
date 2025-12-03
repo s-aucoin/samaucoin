@@ -1,0 +1,38 @@
+{{/* Renders authors for the current page:
+     - front matter `author: "s-aucoin"` or `authors: ["s-aucoin","jdoe"]`
+     - looks up data/authors.yml by key to show name/avatar/url
+*/}}
+
+{{ $page := . }}
+{{ $.Scratch.Set "authors" (slice) }}
+
+{{ if $page.Params.authors }}
+  {{ $.Scratch.Set "authors" $page.Params.authors }}
+{{ else if $page.Params.author }}
+  {{ $.Scratch.Set "authors" (slice $page.Params.author) }}
+{{ end }}
+
+{{ $authors := $.Scratch.Get "authors" }}
+
+{{ if gt (len $authors) 0 }}
+  <div class="author-list" aria-label="Authors">
+    {{ range $i, $a := $authors }}
+      {{ $id := $a }}
+      {{ $data := index $page.Site.Data.authors $id }}
+      {{ if $data }}
+        <a class="author-item" href="{{ with $data.url }}{{ . }}{{ else }}/authors/{{ $id | urlize }}{{ end }}">
+          {{ with $data.avatar }}
+            <img class="author-avatar" src="{{ . }}" alt="{{ $data.name }}" />
+          {{ end }}
+          <span class="author-name">{{ $data.name }}</span>
+        </a>
+      {{ else }}
+        <span class="author-item author-name">{{ $a }}</span>
+      {{ end }}
+
+      {{ if lt (add $i 1) (len $authors) }}
+        <span class="author-sep">,</span>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

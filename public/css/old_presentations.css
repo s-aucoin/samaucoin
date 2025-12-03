@@ -1,0 +1,240 @@
+/* presentations.css — modeled on publications/references.css structure and using the same
+   theme-provided CSS variables so presentations visually match publications.
+   Save as static/css/presentations.css and ensure templates include:
+   <link rel="stylesheet" href="{{ "/css/presentations.css" | relURL }}">
+*/
+
+/* Layout */
+.cards-container,
+.presentation-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 22px;
+  box-sizing: border-box;
+}
+
+/* Default card visual:
+   - For normal (light) mode we choose a light card background and table-border color.
+   - For dark mode we pick the sidebar background + sidebar border which your theme defines.
+   - Support both the publications' .reference-card and our .presentation-card/.card-box names
+     so the same visual rules apply regardless of which class the template uses.
+*/
+.reference-card,
+.card-box,
+.presentation-card {
+  max-width: 760px;
+  margin: 18px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  /* Light-mode fallback card background & border (uses theme variables where available) */
+  background: var(--sidebar_h1_color, #fafcff);
+  border: 1px solid var(--sidebar_bg_color, #003366);
+  transition: background .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+
+/* Dark-mode card background and border when your theme sets .dark-theme on body.
+   Also support some common alternate selectors that themes sometimes use. */
+body.dark-theme .reference-card,
+body.dark-theme .card-box,
+body.dark-theme .presentation-card,
+body[data-theme="dark"] .reference-card,
+body[data-theme="dark"] .card-box,
+body[data-theme="dark"] .presentation-card,
+html.theme-dark .reference-card,
+html.theme-dark .card-box,
+html.theme-dark .presentation-card,
+body.theme-dark .reference-card,
+body.theme-dark .card-box,
+body.theme-dark .presentation-card,
+body[class*="dark"] .reference-card,
+body[class*="dark"] .card-box,
+body[class*="dark"] .presentation-card {
+  background: var(--sidebar-bg-color, #001a33);
+  border-color: var(--sidebar-img-border-color, #515151);
+}
+
+/* Card inner padding */
+.card-inner {
+  padding: 26px 30px;
+}
+
+/* Titles: use the theme post-title variable (this is changed by body.dark-theme in your theme) */
+/* Match both the reference and presentation single/card title selectors. */
+.reference-card .card-title,
+.reference-single .reference-title,
+.presentation-card .card-title,
+.presentation-single .presentation-title,
+.card-box .card-title {
+  color: var(--post-title-color, #303030);
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.12;
+}
+
+/* Subtle subtitle / metadata color */
+.card-authors,
+.card-event,
+.card-location,
+.card-journal,
+.card-doi,
+.card-link-meta,
+.presentation-meta,
+.reference-meta {
+  color: var(--sidebar_meta_color, #9fb0c6);
+  font-size: 0.95rem;
+  margin: 0 0 6px 0;
+}
+
+/* Card description / excerpt */
+.card-excerpt,
+.card-subtitle,
+.presentation-excerpt,
+.reference-excerpt {
+  color: var(--body_text_color, #4b6a7f);
+  font-size: 0.98rem;
+  margin-top: 0.6rem;
+  line-height: 1.6;
+}
+
+/* Meta row (date etc.) */
+.card-meta {
+  margin-top: 0.9rem;
+  color: var(--sidebar_meta_color, #9fb0c6);
+  font-size: 0.9rem;
+}
+
+/* Hover / focus effects */
+.card-box:hover,
+.reference-card:hover,
+.presentation-card:hover {
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+  transform: translateY(-3px);
+}
+
+/* Single page specifics for presentations */
+.presentation-header {
+  margin-bottom: 1.25rem;
+}
+
+.presentation-title {
+  font-size: 2rem;
+  color: var(--post-title-color, #303030);
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+/* Presentation meta block */
+.presentation-meta {
+  color: var(--sidebar_meta_color, #9fb0c6);
+  font-size: 0.96rem;
+}
+
+/* Abstract section on single pages */
+.presentation-abstract {
+  margin: 1rem 0 1.25rem 0;
+  background: rgba(255,255,255,0.01);
+  border-left: 3px solid rgba(255,255,255,0.03);
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+}
+
+.presentation-abstract h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: var(--post-title-color, #303030);
+}
+
+/* Content body */
+.description-content {
+  color: var(--body_text_color, #d7e9f6);
+  line-height: 1.7;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Download / slides button (re-use publication styles) */
+.presentation-download .btn,
+.publication-download .btn {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  background: transparent;
+  border: 1px solid var(--sidebar_img_border_color, rgba(255,255,255,0.06));
+  color: var(--post-title-color, #303030);
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.presentation-download .btn:hover,
+.publication-download .btn:hover {
+  background: rgba(63,160,255,0.08);
+  color: var(--accent_color, #3fa0ff);
+}
+
+/* Figure styling (works with shortcode, HTML figure, or page-bundle processed images) */
+.presentation-figure,
+.shortcode-figure,
+.publication-figure,
+figure.my-figure {
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.presentation-figure img,
+.shortcode-figure img,
+.publication-figure img,
+figure.my-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.06);
+}
+
+.presentation-figure figcaption,
+.shortcode-figure figcaption,
+.publication-figure figcaption,
+figure.my-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--sidebar_meta_color, #9fb0c6);
+  line-height: 1.3;
+}
+
+/* Ensure list-title (H1) appearance matches publications */
+.list-title {
+  font-size: 2.25rem;
+  line-height: 1.05;
+  color: var(--sidebar_h1_color, #e9f7ff);
+  margin: 0 0 1.25rem 0;
+  font-weight: 600;
+}
+
+/* Small screens */
+@media (max-width: 880px) {
+  .cards-container,
+  .presentation-container {
+    padding: 0 0.9rem;
+    margin: 1.5rem auto;
+  }
+
+  .list-title {
+    font-size: 1.75rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+}
+
+/* Compatibility helpers (if your templates use slightly different class names) */
+.presentation-card.card-box,
+article.presentation-card,
+article.card-box.presentation-card {
+  /* ensure padding if card-box isn't applied to the article element */
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.5rem;
+}

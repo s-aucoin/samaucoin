@@ -2,11 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Sam Aucoin</title>
-    <link>https://samaucoin.org/publications/</link>
+    <link>http://localhost:1313/publications/</link>
     <description>Recent content in Publications on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://samaucoin.org/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coastal Sea-Ice Break-Up Events in Beringia</title>
+      <link>http://localhost:1313/publications/breakupevents/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/breakupevents/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/publications/breakupevents/UtqiagvikWinter95Stability.png&#34; alt=&#34;Break-up events&#34;&gt;&#xA;  &lt;figcaption&gt; Sea‐ice concentration (blue), surface ice temperature (red), and meridional wind&#xA;speed (dark green) from the NOAA/NSIDC Climate Data Record of Passive Microwave Sea Ice Concentration (CDR), European&#xA;Centre for Medium‐Range Weather Forecasts (ECMWF) Reanalysis 5th Generation (ERA5) and Community Earth System Model Large Ensemble Version 1 (CESM1-LE) ensemble member 2 in Utqiagvik. The left‐hand side vertical axis is both wind speed (m/s) and temperature (°C). Winter 1980 is shown for both CESM1‐LE and CDR to represent typical mid‐20th century years. A break‐up event (blue circles) is defined as SIC falling below 95% following stable ice cover for 10 days. The start of the&#xA;freeze season (green lines) is defined as the first day of a series of 10 days with a daily mean greater than 95% SIC, and the start of the melt season (green lines) is defined as the first day of a series of 30 consecutive days with SIC below 95% SIC.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Micro-Urban Heat Islands in the City of Montreal</title>
+      <link>http://localhost:1313/publications/muhis/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/muhis/</guid>
+      <description>&lt;figure class=&#34;my-figure&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/publications/muhis/MUHI_asphalt_concrete_overlap.png&#34; alt=&#34;MUHIs in Montreal&#34;&gt;&#xA;  &lt;figcaption&gt;Micro Urban Heat Islands (MUHI) colocation with asphalt and concrete on August 10th, 2021. MUHIs are&#xA;identified using the top 2% of temperatures. The region around the Montréal Trudeau International Airport is shown in the inset.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
   </channel>
 </rss>

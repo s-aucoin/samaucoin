@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Sam Aucoin</title>
-    <link>https://samaucoin.org/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <atom:link href="https://samaucoin.org/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

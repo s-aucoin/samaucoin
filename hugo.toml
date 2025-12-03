@@ -12,7 +12,6 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     	brand_image = "/images/sam_portrait.jpg"    # path to the image shown in the sidebar
     	description = "Update this description..." # Used as default meta description if not specified in front matter
     	dark_mode = false                      # optional - defaults to false
-    	# favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
     	# MENU PLACEHOLDER
     	# Menu dict keys:
@@ -27,10 +26,10 @@ menu = [
         # Note that you must put your markdown file 
         # inside of a directory with the same name.
 
-	{Name = "Projects", URL = "/projects/", HasChildren = false},
-	{Name = "Publications", URL = "/publications/", HasChildren = false},
-	{Name = "Activities", URL = "/activities/", HasChildren = false}
-
+	{Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 10},
+	{Name = "Publications", URL = "/publications/"},
+	{Name = "Presentations", URL = "/presentations/"},
+	{Name = "Activities", URL = "/activities/", HasChildren = true, Limit = 10},
     ]
 
 
@@ -45,7 +44,7 @@ menu = [
 
 
 # Hex colors for your sidebar.
-# colour palette: [#181a1b, #001a33, #003366, #004080, #0059b3, #0066cc, #cce5ff, #e5f2ff]
+# colour palette: [#181a1b, #001a33, #003366, #004080, #0059b3, #0066cc, #cce5ff, #e5f2ff, #fafcff]
     moon_sun_background_color = "#0059b3"   # default is #515151
     moon_sun_color = "#cce5ff"                 # default is #FFF
     sidebar_a_color = "#cce5ff"                # default is #FFF
@@ -57,7 +56,7 @@ menu = [
 
     # Hex colors for your content in light mode.
     code_color = "#000"                     # default is #000
-    code_background_color = "#E5E5E5"       # default is #E5E5E5
+    code_background_color = "#fafcff"       # default is #E5E5E5
     code_block_color = "#cce5ff"               # default is #FFF
     code_block_background_color = "#272822" # default is #272822
     content_bg_color = "#e5f2ff"            # default is #FAF9F6
@@ -95,3 +94,8 @@ menu = [
 [taxonomies]
     series = 'series'
     tags = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

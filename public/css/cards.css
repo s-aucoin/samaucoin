@@ -1,0 +1,141 @@
+/* Strong override to make each list entry a centered card. */
+/* Put this in static/css so Hugo serves it directly (no pipes). */
+
+:root{
+  --card-max-width: 760px;
+  --page-max-width: 980px;
+  --card-bg: rgba(255,255,255,0.02);
+  --card-border: rgba(255,255,255,0.04);
+  --muted: rgba(255,255,255,0.7);
+  --title-color: rgba(255,255,255,0.95);
+  --accent: #7aa2ff;
+}
+
+/* Force the posts-list area to center cards */
+.site-main .posts-list .cards-container,
+.posts-list .cards-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 48px 22px;
+  box-sizing: border-box;
+}
+
+/* Page heading centered like Doks */
+.posts-list .list-title {
+  text-align: center !important;
+  font-size: 2.6rem;
+  margin: 0 0 34px;
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+/* Each post becomes a single centered card */
+.site-main .posts-list .card-box,
+.posts-list .card-box {
+  width: 100% !important;
+  max-width: var(--card-max-width) !important;
+  margin: 18px auto !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--card-border) !important;
+  background: var(--card-bg) !important;
+  overflow: hidden !important;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-sizing: border-box;
+}
+
+/* Link and inner spacing */
+.posts-list .card-link {
+  display: block !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.posts-list .card-inner {
+  padding: 28px 34px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+/* Title and summary */
+.posts-list .card-title {
+  margin: 0 !important;
+  font-size: 1.6rem !important;
+  color: var(--title-color) !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+}
+
+.posts-list .card-summary {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Meta row */
+.posts-list .card-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: var(--muted) !important;
+  font-size: 0.95rem !important;
+  margin-top: 6px !important;
+}
+
+/* Hover lift */
+.posts-list .card-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.45);
+}
+
+/* Make sure cards remain single-column on narrow screens */
+@media (max-width: 720px) {
+  .posts-list .cards-container {
+    padding: 28px 14px !important;
+  }
+  .posts-list .card-inner {
+    padding: 20px !important;
+  }
+  .posts-list .card-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Add these rules to ensure only a preview of the summary is visible */
+
+/* clamp to ~4 lines with ellipsis */
+.card-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;        /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fallback: limit height if line-clamp not supported */
+.card-summary {
+  max-height: calc(1.6rem * 4); /* approximate max based on font-size * lines */
+}
+
+/* optional: add a subtle gradient fade at the bottom of the summary */
+.card-summary--fade {
+  position: relative;
+}
+.card-summary--fade:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.4rem; /* melt distance for fade */
+  background: linear-gradient(transparent, var(--card-bg, rgba(0,0,0,0.03)));
+  pointer-events: none;
+}

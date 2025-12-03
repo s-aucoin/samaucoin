@@ -1,0 +1,19 @@
+.publication-figure {
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.publication-figure img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.06);
+}
+
+.publication-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--list-color, #5A5A5A);
+  line-height: 1.4;
+}

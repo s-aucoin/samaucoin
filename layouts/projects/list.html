@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="references-list posts-list">
+  <div class="cards-container">
+    <h1 class="list-title">{{ if .Title }}{{ .Title }}{{ else }}Projects{{ end }}</h1>
+
+    {{/* Use .Pages to show every page in this section (no pagination) */}}
+    {{ range .Pages }}
+      <article class="card-box reference-card">
+        <a class="card-link" href="{{ .RelPermalink }}">
+          <div class="card-inner">
+            <h2 class="card-title">{{ .Title }}</h2>
+
+            <p class="card-summary">
+              {{ if .Params.summary }}
+                {{ .Params.summary | safeHTML }}
+              {{ else if .Summary }}
+                {{ .Summary | safeHTML }}
+              {{ else }}
+                {{ .Plain | truncate 240 }}
+              {{ end }}
+            </p>
+
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Link the CSS for projects (load after theme CSS) -->
+<link rel="stylesheet" href="{{ "/css/projects.css" | relURL }}">
+{{ end }}

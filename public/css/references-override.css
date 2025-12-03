@@ -1,0 +1,65 @@
+/* Strong overrides to force colors for references pages.
+   Uses the variables set by layouts/partials/references-colors.html.
+   Loaded after the theme CSS to ensure it takes effect. */
+
+:root { /* keep this small so inherited vars remain available */ }
+
+/* Very specific selectors (site-main helps if theme wraps content) */
+body .site-main .references-list .reference-card,
+body .site-main .reference-single,
+body .site-main .references-list .reference-card .card-inner {
+  background: var(--ref-card-bg) !important;
+  border-color: var(--ref-card-border) !important;
+  color: var(--ref-text) !important;
+}
+
+/* Titles */
+body .site-main .references-list .reference-card .card-title,
+body .site-main .reference-single .reference-title {
+  color: var(--ref-text) !important;
+}
+
+/* Summary preview */
+body .site-main .references-list .reference-card .card-summary,
+body .site-main .reference-single .reference-description,
+body .site-main .reference-single .description-content {
+  color: var(--ref-muted) !important;
+}
+
+/* Meta/date/author list text */
+body .site-main .references-list .reference-card .card-meta,
+body .site-main .reference-single .reference-meta,
+body .site-main .references-list .reference-card .card-authors,
+body .site-main .reference-single .reference-authors,
+body .site-main .author-list,
+body .site-main .author-list .author-name {
+  color: var(--ref-muted) !important;
+}
+
+/* Links inside cards (DOI / author links) */
+body .site-main .references-list .reference-card a,
+body .site-main .reference-single a {
+  color: var(--ref-accent) !important;
+}
+
+/* Make sure any high-specificity theme rule on headings is beaten */
+h1.reference-title,
+h1.reference-title * {
+  color: var(--ref-text) !important;
+}
+
+/* Also target some common theme root toggles (if they set classes) */
+body.theme-light .reference-card,
+html.theme-light .reference-card,
+body.light-mode .reference-card {
+  background: var(--ref-card-bg) !important;
+  border-color: var(--ref-card-border) !important;
+}
+
+/* Responsiveness remains the same - no changes here */
+@media (max-width: 720px) {
+  body .site-main .references-list .reference-card,
+  body .site-main .reference-single {
+    background: var(--ref-card-bg) !important;
+  }
+}

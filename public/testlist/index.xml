@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testlist on Sam Aucoin</title>
+    <link>http://localhost:1313/testlist/</link>
+    <description>Recent content in Testlist on Sam Aucoin</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Wed, 19 Nov 2025 15:34:05 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/testlist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/testlist/post1/</link>
+      <pubDate>Wed, 19 Nov 2025 15:34:05 -0400</pubDate>
+      <guid>http://localhost:1313/testlist/post1/</guid>
+      <description>&lt;p&gt;this is my first post&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coastal Sea-Ice Break-Up Events in Beringia</title>
+      <link>http://localhost:1313/testlist/breakupevents/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/testlist/breakupevents/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://doi.org/10.26443/msurj.v17i1.172&#34; target=&#34;_blank&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;We quantify changes in break‐up events of landfast ice in the transition from a perennial to a seasonal sea ice cover in the Arctic. A break‐up event is defined as a time when coastal sea ice concentration drops below 95% after a minimum period of 10 days of stable ice conditions. To this end we analyze output diagnostics from the Community Earth System Model (Version 1) – Large Ensemble from 1920 to 2080, focusing on six coastal communities of Alaska, Chukotka, and the Kamtchatka Peninsula: Utqiaġvik, Point Hope, Gambell, Novoye Chaplino, Sireniki, and Pakhachi. Model results generally agree with the satellite record with open water formation along the coastline associated with sustained offshore winds, although the sensitivity of CESM1‐LE is higher than that of observations due to the absence of a landfast ice parameterization in CESM1‐ LE. Specifically, we see a linear relationship between the magnitude of the opening and offshore surface wind stresses integrated over the 10 days prior to the opening event, (p‐value &amp;lt; 0.01). While the break‐up event frequency increases (5.53 × 10−5 events/day/year for Utqiagvik) in the 21st century due to the thin- ning, or weakening, of the landfast ice cover, the total number of winter break‐up events decreases due to a shortening of the winter season (mean of ‐5.3 days/decade).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
