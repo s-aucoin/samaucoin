@@ -1,11 +1,10 @@
-baseURL = 'https://s-aucoin.github.io/sam-aucoin-oceanography/'
+baseURL = "https://s-aucoin.github.io/sam-aucoin-oceanography/"
 languageCode = 'en-ca'
 title = 'Sam Aucoin'
 theme = 'poison'
 pagination.pagerSize = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
-relativeURLs = false
 
 [params]
  	front_page_content = []
@@ -40,7 +39,7 @@ menu = [
     linkedin_url = "https://linkedin.com/in/sam-aucoin-463a241a1"
     orcid = "https://orcid.org/0009-0009-6772-3418"
     google_scholar_url = "https://scholar.google.ca/citations?hl=en&user=q93anJoAAAAJ"
-    cv_url = "/files/SA_CV_2024.pdf"
+    cv_url = "files/SA_CV_2024.pdf"
     youtube_url = "https://youtube.com/@SA_Ocean"
 
 
